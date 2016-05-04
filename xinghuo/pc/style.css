@@ -1,0 +1,68 @@
+@charset "utf-8";
+body{background:#FFF; padding:0px; margin:0px;_background-attachment:fixed;}
+img{border:none;}
+.clear{clear:both}
+
+.header{width:1066px; height:20px; line-height:20px; margin:0px auto; padding-top:10px; text-align:right; padding-right:10px; font-size:18px; color:#0076ca}
+.menu{height:60px; line-height:60px; width:1076px; margin:0px auto; overflow:hidden; position:relative; padding:20px 0px 0px} 
+.menu_ul{width:640px; margin:0px 0px 0px 280px; padding:0px}
+.menu_ul ul{margin:0px; padding:0px; list-style:none}
+.menu_ul ul li{float:left; font-size:18px; padding:0px 25px; height:60px; line-height:70px;}
+.menu_ul ul li a{color:#484848; text-decoration:none}
+.menu_ul ul li a:hover{color:#F60}
+.menu .logo{position:absolute; left:15px; top:0px; height:70px; width:213px;}
+.menu .menu_btn{position:absolute; right:10px; top:34px; height:32px; width:138px; line-height:32px; background:url('images/menu_btn.jpg') no-repeat left top}
+.menu .menu_btn a{display:block; float:left; width:68px; height:32px; line-height:32px; text-align:center; color:#FFF; text-decoration:none; font-family:"宋体"; font-size:14px;}
+.menu .menu_btn a:hover{color:#F60; text-decoration:underline}
+/*header*/
+.common{width:100%; overflow:hidden}
+.common .content{margin:0px auto; padding:0px; width:1200px;}
+.common img{float:left; margin:0px; padding:0px}
+
+.bg1{background:#0076ca; height:638px;}
+
+.bg2{background:#FFF; height:235px;}
+
+.bg3{background:#0076ca; height:137px;}
+
+.bg4{background:#FFF; height:484px;}
+
+.bg5{background:#FFF; height:491px;}
+
+.bg6{background:#FFF; height:530px;}
+
+.bg7{background:#FFF; height:563px;}
+
+.bg8{background:#3bc9bd; height:137px;}
+
+.bg9{background:#FFF; height:544px;}
+
+.bg10{background:#FFF; height:500px;}
+
+.bg11{background:#FFF; height:552px;}
+
+.bg12{background:#FFF; height:660px;}
+
+.bg13{background:#fff; height:504px;}
+
+.bg14{background:#58c2ec; height:137px;}
+
+.bg15{background:#fff; height:800px;}
+
+.bg16{background:#fff; height:288px;}
+
+.banner{width:100%; height:172px; background:#263036; margin-top:10px}
+.banner img{display:block; width:1200px; height:172px; margin:0px auto}
+.contact{width:1200px; margin:0px auto 0px}
+
+.nav{width:220px; background:url('images/contact/bg.jpg') repeat-y right top; padding-top:15px;}
+.nav ul{list-style:none; width:100%; margin:0px; padding:0px}
+.nav ul li{width:100%; text-align:left; text-indent:80px; font-size:18px; margin-top:15px; height:44px; line-height:44px; background:url('images/contact/common.png') no-repeat right center; cursor:pointer; color:#333}
+.nav ul li.cur{color:#117fce; background:url('images/contact/cur.png') no-repeat right center;}
+
+.content_c{padding:0px 32px}
+.content_c h2{margin:0px; padding:30px 0px 20px; text-indent:8px; font-size:26px; font-family:"微软雅黑"; color:#333; font-weight:normal; border-bottom:1px #dddddd solid} 
+.content_c h2 a{color:#333}
+.content_c .introduce{font-size:15px; color:#777; font-family:"宋体"; line-height:26px; padding:10px 0px}
+.content_c .contacted{font-size:15px; color:#777; font-family:"宋体"; line-height:30px; padding:10px 0px}
+.content_c .contacted span{color:#0076ca}

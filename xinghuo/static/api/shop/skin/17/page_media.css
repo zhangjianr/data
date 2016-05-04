@@ -1,0 +1,49 @@
+@media all and (min-width:360px){
+	.ind_one_box .lbar,.ind_one_box .rbar{ width:179px; height:179px}
+	#shop_skin_index .banner,.ind_two_box{width:100%; height:180px; line-height:180px;}
+	.ind_th_box .lbar{ width:86px; height:180px}
+	.ind_th_box .rbar{width:271px; }
+	.ind_th_box .rbar li{ width:89px; height:89px}
+	
+}
+@media all and (min-width:420px){
+	.ind_one_box .lbar,.ind_one_box .rbar{ width:209px; height:209px}
+	#shop_skin_index .banner,.ind_two_box{width:100%; height:180px; line-height:180px;}
+	.ind_th_box .lbar{ width:100px; height:210px;}
+	.ind_th_box .rbar{width:316px; }
+	.ind_th_box .rbar li{ width:104px; height:104px}
+}
+
+@media all and (min-width:432px){
+	.ind_one_box .lbar,.ind_one_box .rbar{ width:214px; height:214px}
+	#shop_skin_index .banner,.ind_two_box{width:100%; height:211px;}
+	.ind_th_box .lbar{ width:103px; height:217px;}
+	.ind_th_box .rbar{width:327px; }
+	.ind_th_box .rbar li{ width:107px; height:107px}
+	.ind_th_box .rbar .mar_b{ margin-bottom:3px}
+}
+@media all and (min-width:480px){
+	.ind_one_box .lbar,.ind_one_box .rbar{ width:239px; height:239px}
+	#shop_skin_index .banner,.ind_two_box{width:100%; height:210px; line-height:210px;}
+	.ind_th_box .lbar{ width:114px; height:240px;}
+	
+	.ind_th_box .rbar{width:364px;}
+	.ind_th_box .rbar li{ width:119px; height:119px}
+}
+@media all and (min-width:560px){
+	.ind_one_box .lbar,.ind_one_box .rbar{ width:279px; height:279px}
+	#shop_skin_index .banner,.ind_two_box{width:100%; height:280px; line-height:280px;}
+	.ind_th_box .lbar{ width:134px; height:282px;}
+	.ind_th_box .rbar{width:428px;}
+	.ind_th_box .rbar li{ width:140px; height:140px}
+	.ind_th_box .rbar .mar_r{ margin-right:4px}
+	.ind_th_box .rbar .mar_b{ margin-bottom:3px}
+}
+@media all and (min-width:640px){
+	.ind_one_box .lbar,.ind_one_box .rbar{ width:319px; height:319px}
+	#shop_skin_index .banner,.ind_two_box{width:100%; height:320px; line-height:320px;}
+	.ind_th_box .lbar{ width:152px; height:320px}
+	.ind_th_box .rbar{width:484px;}
+	.ind_th_box .rbar li{ width:158px; height:158px}
+	.ind_th_box .rbar .mar_b{ margin-bottom:3px}
+}

@@ -1,0 +1,16 @@
+<br/>
+<span>灰色不可选择表示已被其他用户选择！！！</span>
+<br/>
+<br/>
+<style>
+.county_select{width:400px;}
+</style>
+<select class="county_select" name="county" multiple="multiple">
+	{{foreach from=$county_list key=county_name item=county_item}}
+	<optgroup label="{{$county_name}}">
+		{{foreach from=$county_item key=c_name item=c_item}}
+		<option value="{{$c_name}}_{{$c_item}}" {{if $c_name|in_array:$county_data_list['disable']}}disabled="disabled"{{/if}}>{{$c_item}}</option>
+		{{/foreach}}
+	</optgroup>
+	{{/foreach}}
+</select>

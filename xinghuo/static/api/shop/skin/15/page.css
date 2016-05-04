@@ -1,0 +1,39 @@
+.mar_r6{ margin-right:6px}
+#shop_skin_index{width:100%; height:100%; overflow:hidden;position:relative; max-width:640px;background:#f3f3f3;}
+#shop_skin_index .shop_skin_index_list{overflow:hidden; position:relative;}
+#shop_skin_index .img{height:100%; overflow:hidden;}
+#shop_skin_index .img img{width:100%;}
+#shop_skin_index .banner{width:94%; height:auto; overflow:hidden; margin:0 auto; z-index:1;}
+#shop_skin_index .banner *{width:100%; overflow:hidden;}
+/*top_column*/
+.top_column{background:url(icon_line.jpg) left center repeat-x; height:50px; line-height:50px; text-align:center}
+.top_column .text{ display:inline; padding:0 10px;background:#f3f3f3; height:50px; font-weight:bold; font-size:1.125em}
+/*index_prolist*/
+#index_prolist .items{ margin:0px auto 15px auto; padding-bottom:10px; width:94%; background:url(icon_line.jpg) left bottom repeat-x;}
+#index_prolist .items .img{ margin-bottom:5px; text-align:center; width:100%; height:auto; margin:0 auto}
+#index_prolist .items .name a{ font-size:16px; font-weight:bold; color:black}
+#index_prolist .items .desc{ margin:5px auto 10px auto; line-height:20px}
+#index_prolist .items .lbar{ width:50%;}
+#index_prolist .items .lbar .price{ font-size:1em;}
+#index_prolist .items .lbar .price span{ color:#cf2d00; font-weight:bold}
+#index_prolist .items .rbar{ width:40%;}
+#index_prolist .items .btn{ width:100%; height:30px; line-height:30px; text-align:center; display:inline-block; color:#fff; background:#ef8307; border:0;box-shadow: 0 0 3px #000;}
+
+/*ind_one_box*/
+.ind_one_box{ width:94%; margin:5px auto}
+.ind_one_box .lbar,.ind_one_box .rbar{ width:49%;height:auto}
+
+/*@media all and (min-width:360px){	
+	#index_prolist .items .img{ width:340px; height:191px;}
+	.ind_one_box{ width:340px;}
+	.ind_one_box .lbar,.ind_one_box .rbar{ width:169px;height:156px}
+}
+@media all and (min-width:420px){
+	#index_prolist .items .img_item{ width:188px; height:188px; overflow:hidden;}
+}
+@media all and (min-width:480px){
+	#index_prolist .items .img_item{ width:220px; height:220px; overflow:hidden;}
+}
+@media all and (min-width:640px){
+	#index_prolist .items .img_item{ width:250px; height:250px; overflow:hidden;}
+}*/

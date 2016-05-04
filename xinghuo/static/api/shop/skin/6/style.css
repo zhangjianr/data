@@ -1,0 +1,10 @@
+#footer_points{height:50px;}
+#footer{background:#f9f9f9; height:50px; border-top:2px solid #c9c9c9; padding:8px 4px; box-sizing:border-box;}
+#footer ul li{height:32px; padding-top:0; box-sizing:border-box; padding:0 4px;}
+#footer ul li>a{color:#666; line-height:32px; width:100%; height:32px;}
+#footer ul li>a img{vertical-align:middle; width:14px; height:16px;}
+#footer ul li.category{height:32px; padding:0 4px;}
+#footer ul li.category a{width:100%; height:32px; line-height:32px; background:#dcdcdc; text-align:center; text-indent:0;}
+#footer ul li.cart a{background:#dcdcdc;}
+#footer ul li.member a{background:#dcdcdc;}
+#footer ul li.home a{background:#dcdcdc;}

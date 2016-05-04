@@ -1,0 +1,18 @@
+@import url('main_frame.css');
+
+#products .item{border-bottom:1px solid #ddd; position:relative; padding:12px 5px; height:60px; overflow:hidden; margin-left:5px; width:90%; -webkit-tap-highlight-color:rgba(255,0,0,0);}
+#products .item .recom{position:absolute; z-index:10; width:35px; margin:-5px 0 0 -15px;}
+#products .item .recom img{width:35px;}
+#products .item .img{width:60px; height:60px; z-index:9; position:absolute;}
+#products .item .img img{width:60px; height:60px;}
+#products .item .inkcom{float:left; position:absolute; left:70px; padding-right:35px;}
+#products .item .inkcom .name{font-size:14px; margin-bottom:3px;}
+#products .item .inkcom .price{font-size:16px; color:#ff0000;}
+#products .item .inkcom_bt{position:absolute; width:35px; right:0; margin-top:10px;}
+#products .item .inkcom_bt .btn{padding:4px; margin-top:4px;}
+#products .item .inkcom_bt .bts{padding:4px; margin-top:4px; display:none;}
+#products .blank25{height:38px;}
+
+#shopping_cart{width:100%; margin:0 auto; background:#ddd; height:38px; line-height:38px; position:fixed; z-index:1000; bottom:0; border-top:1px solid #ccc; filter:alpha(opacity=90); opacity:0.9; -moz-opacity:0.9; padding:0 10px; box-sizing:border-box; display:none;}
+#shopping_cart span{color:red; font-weight:bold;}
+#shopping_cart a{display:block; float:right; width:70px; margin-top:4px; height:28px; line-height:28px; background:#A70513; border-radius:5px; color:#fff; text-decoration:none; text-align:center;}

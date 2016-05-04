@@ -1,0 +1,28 @@
+#shop_skin_index{width:100%; height:100%; overflow:hidden; position:relative;max-width:640px;}
+#shop_skin_index .shop_skin_index_list{overflow:hidden; position:relative;}
+#shop_skin_index .img{height:100%; overflow:hidden;}
+#shop_skin_index .img img{width:100%;}
+#shop_skin_index .banner{width:100%; height:100%; overflow:hidden; margin:0; z-index:1; left:0; top:0; z-index:1}
+#shop_skin_index .banner *{width:100%; overflow:hidden;}
+
+
+.box{position:absolute; bottom:60px; width:100%;z-index:1000; text-align:center; z-index:2;}
+.box li{ width:43%; height:auto; margin:5px; display:inline-block;  *display:block; *float:left; overflow:hidden;}
+.box li .img{width:100%; height:100%}
+.box li img{ width:100%; height:auto}
+.box li .text{ position:absolute; z-index:2; bottom:30px; text-align:center; width:100%; left:0}
+.box li .text a{font-size:16px; }
+
+/*@media all and (min-width:360px){
+	.box li{ width:160px;height:137px; }
+	
+}
+@media all and (min-width:420px){
+	.box li{ width:180px;height:154px;}
+}
+@media all and (min-width:480px){
+	.box li{ width:210px;height:180px; }
+}
+@media all and (min-width:640px){
+	.box li{ width:275px;height:240px; }
+}*/

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta content="telephone=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>admin的微商城</title>
+<link href="assets/global.css" rel="stylesheet" type="text/css">
+<link href="assets/global_002.css" rel="stylesheet" type="text/css">
+<link href="assets/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="assets/jquery-1.js"></script>
+<script type="text/javascript" src="assets/global.js"></script><script language="javascript" src="assets/jweixin-1.js"></script>
+<script type="text/javascript" src="assets/shop.js"></script>
+<link href="assets/style_002.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var UsersID = "9vvvwwqd9y";
+$(document).ready(shop_obj.page_init);
+</script>
+</head>
+
+<body>
+<div id="shop_page_contents">
+ <div id="cover_layer"></div>
+ <link href="assets/page.css" rel="stylesheet" type="text/css">
+ <link href="assets/page_media.css" rel="stylesheet" type="text/css">
+ <link href="assets/flexslider.css" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="assets/flexslider.js"></script>
+ <script type="text/javascript" src="assets/index.js"></script>
+ <script language="javascript">
+  var shop_skin_data=[{"ContentsType":"1","Title":"[\"\",\"\",\"\",\"\",\"\"]","ImgPath":"[\"\\\/api\\\/shop\\\/skin\\\/11\\\/banner.jpg\",\"\",\"\",\"\",\"\"]","Url":"[\"\",\"\",\"\",\"\",\"\"]","Postion":"t01","Width":"640","Height":"320","NeedLink":"1"},{"ContentsType":"0","Title":"","ImgPath":"\/api\/shop\/skin\/11\/a0.jpg","Url":null,"Postion":"t02","Width":"640","Height":"116","NeedLink":"1"},{"ContentsType":"0","Title":"","ImgPath":"\/api\/shop\/skin\/11\/a1.jpg","Url":null,"Postion":"t03","Width":"640","Height":"116","NeedLink":"1"},{"ContentsType":"0","Title":"","ImgPath":"\/api\/shop\/skin\/11\/a2.jpg","Url":null,"Postion":"t04","Width":"640","Height":"116","NeedLink":"1"},{"ContentsType":"0","Title":"","ImgPath":"\/api\/shop\/skin\/11\/a3.jpg","Url":null,"Postion":"t05","Width":"640","Height":"116","NeedLink":"1"},{"ContentsType":"0","Title":"","ImgPath":"\/api\/shop\/skin\/11\/a4.jpg","Url":null,"Postion":"t06","Width":"640","Height":"116","NeedLink":"1"},{"ContentsType":"0","Title":"","ImgPath":"\/api\/shop\/skin\/11\/a5.jpg","Url":null,"Postion":"t07","Width":"640","Height":"116","NeedLink":"1"}];
+  $(document).ready(index_obj.index_init);
+ </script>
+ <script type="text/javascript">
+  var skin_index_init=function(){
+	$('#shop_skin_index .box a.category').click(function(){
+		if($('#category').height()>$(window).height()){
+			$('html, body, #cover_layer').css({
+				height:$('#category').height(),
+				width:$(window).width(),
+				overflow:'hidden'
+			});
+		}else{
+			$('#category, #cover_layer').css('height', $(window).height());
+			$('html, body').css({
+				height:$(window).height(),
+				overflow:'hidden'
+			});
+		}
+		
+		$('#cover_layer').show();
+		$('#category').animate({left:'0%'}, 500);
+		$('#shop_page_contents').animate({margin:'0 -70% 0 70%'}, 500);
+		window.scrollTo(0);
+		
+		return false;
+	});
+  }
+ </script>
+ <div id="shop_skin_index">
+    <div class="shop_skin_index_list banner" rel="edit-t01">
+        <div class="img"><div class="slider"><div class="flexslider"><ul class="slides"><li style="display: list-item;"><a href=""><img src="assets/banner.jpg" alt=""></a></li></ul></div></div></div>
+    </div>
+    <div class="box">
+    	<div>
+            <div class="search">
+                	  <form action="/api/shop/search.php" method="get">
+        <input name="kw" class="input" placeholder="输入商品名称..." type="text">
+		<input name="UsersID" value="9vvvwwqd9y" type="hidden">
+		<input name="OwnerID" value="" type="hidden">
+        <input class="submit" value=" " type="submit">
+      </form>            </div>
+            <a href="http://test.weiyuntop.com/api/9vvvwwqd9y/shop/allcategory/?wxref=mp.weixin.qq.com" class="category"></a>
+        </div>
+    </div>
+    <div class="shop_skin_index_list list" rel="edit-t02">
+        <div class="img"><img src="assets/a0.jpg"></div>
+    </div>
+    <div class="shop_skin_index_list list" rel="edit-t03">
+        <div class="img"><img src="assets/a1.jpg"></div>
+    </div>
+    <div class="shop_skin_index_list list" rel="edit-t04">
+        <div class="img"><img src="assets/a2.jpg"></div>
+    </div>
+    <div class="shop_skin_index_list list" rel="edit-t05">
+        <div class="img"><img src="assets/a3.jpg"></div>
+    </div>
+    <div class="shop_skin_index_list list" rel="edit-t06">
+        <div class="img"><img src="assets/a4.jpg"></div>
+    </div>
+    <div class="shop_skin_index_list list" rel="edit-t07">
+        <div class="img"><img src="assets/a5.jpg"></div>
+    </div>
+ </div>
+</div>
+<style>
+.cart{position:relative;}
+.cart b{background:red; border-radius: 50%;display: block;height: 15px;position: absolute;right: 20px;top: 5px;width: 15px;font-size:12px;text-align:center;line-height:15px;color:#ffffff;}
+</style>
+<div style="clear:both; position:fixed; top:0px; left:0px; height:42px; font-size:1px; width:100%; background:#000; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5; z-index:500"></div><div style="width:100%; display:block; position:fixed; top:0px; height:42px; left:0px; z-index:999999; color:#FFF"><p style="background:#4878C6; border-radius:8px; height:30px; line-height:28px; font-size:14px; text-align:center; width:80px; margin:6px 8px 0px 0px; padding:0px; float:right"><a href="http://www.baidu.com/?wxref=mp.weixin.qq.com" style="display:block; width:100%; height:100%; color:#FFF">关注我们</a></p><img src="" style="float:left; width:42px; height:42px; display:block;"><span style="display:block; font-size:14px; color:#FFF; height:42px; line-height:42px; float:left; margin-left:8px">您还未关注公众号</span></div><div class="support"><a>郑州鼎汉电子科技有限公司技术支持</a></div>
+<div id="footer_points"></div>
+<footer id="footer">  
+  <ul class="list-group" id="footer-nav">
+    	<li class="home"><a href="http://test.weiyuntop.com/api/9vvvwwqd9y/shop/?wxref=mp.weixin.qq.com">首页</a></li>
+				<li class="sitemap"><a href="http://test.weiyuntop.com/api/9vvvwwqd9y/shop/distribute/?wxref=mp.weixin.qq.com">分销中心</a></li>
+		        
+		<li class="cart"><a href="http://test.weiyuntop.com/api/9vvvwwqd9y/shop/cart/?wxref=mp.weixin.qq.com">购物车</a>
+				<b style="display:none"></b>
+		</li>
+		<li class="user"><a href="http://test.weiyuntop.com/api/9vvvwwqd9y/shop/member/?wxref=mp.weixin.qq.com">个人中心</a></li>
+  </ul>
+</footer>
+ 
+
+	<script language="javascript">
+		var share_config = {
+		   appId:"wx094d6fa878fe12b1",   
+		   timestamp:1453303821,
+		   nonceStr:"wybaoshare",
+		   url:"http://test.weiyuntop.com/api/9vvvwwqd9y/shop/",
+		   signature:"648d48f468fd171cd29ebbb5a46300df978019b8",
+		   title:"admin的微商城",
+		   desc:"鼎汉科技自定义分享域~",
+		   img_url:"http://test.weiyuntop.com/uploadfiles/9vvvwwqd9y/image/5689eaa584.jpg",
+		   link:"http://test.weiyuntop.com/api/9vvvwwqd9y/shop/"
+		};
+		
+		$(document).ready(global_obj.share_init_config);
+	</script>
+<div class="conver_favourite"><img src="assets/favourite.png"></div>
+
+</body></html>

@@ -1,0 +1,280 @@
+<?php 
+require_once($_SERVER["DOCUMENT_ROOT"].'/include/helper/distribute.php');
+require_once($_SERVER["DOCUMENT_ROOT"].'/include/helper/url.php');
+
+
+$base_url = base_url();
+
+if(empty($_SESSION["Users_Account"]))
+{
+	header("location:/member/login.php");
+}
+//获取分销商称号配置
+
+if($_POST)
+{	
+    
+	$Dis_List = array();
+	$Dis_Pro_Title =  $_POST['Dis_Pro_Title'];
+	
+	foreach($Dis_Pro_Title['Name'] as $key=>$item){
+		$Dis_List[$key+1]['Name'] = $item;
+		$Dis_List[$key+1]['Saleroom'] = $Dis_Pro_Title['Saleroom'][$key];
+		$Dis_List[$key+1]['Bonus'] = $Dis_Pro_Title['Bonus'][$key];
+        $Dis_List[$key+1]['ImgPath'] = $Dis_Pro_Title['ImgPath'][$key];
+		$Dis_List[$key+1]['Group_Num'] = $Dis_Pro_Title['Group_Num'][$key];
+	}
+	
+	
+	if($_POST['operation'] == 'add'){
+		add_dis_pro_title($DB,$_SESSION['Users_ID'],$Dis_List);
+	}else{
+		set_dis_pro_title($DB,$_SESSION['Users_ID'],$Dis_List);
+	}
+
+	
+}
+
+//获取此用户爵位设置
+$rsDsLvel = $DB->GetRs('shop_distribute_config', 'Pro_Title_Level', "where Users_ID='" . $_SESSION['Users_ID'] . "'");
+
+$exist = false;
+if($rsDsLvel){
+	$exist = TRUE;
+	$dis_title_level = get_dis_pro_title($DB,$_SESSION['Users_ID'],'back');
+}
+
+if(!$exist){
+	$item = array('Name'=>'','Saleroom'=>'','Bonus'=>'','ImgPath'=>'');
+	$dis_title_level = array();
+	array_push($dis_title_level,$item,$item,$item,$item);
+	$new_dis_title_level = array();
+	
+	foreach($dis_title_level as $k=>$v){	
+		$new_dis_title_level[$k+1] = $item;
+	}
+	
+	$dis_title_level = $new_dis_title_level;	
+}
+
+
+?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href='/static/css/global.css' rel='stylesheet' type='text/css' />
+<link href='/static/member/css/main.css' rel='stylesheet' type='text/css' />
+<script type='text/javascript' src='/static/js/jquery-1.7.2.min.js'></script>
+<script type='text/javascript' src='/static/js/jquery.formatCurrency-1.4.0.js'></script>
+<script type='text/javascript' src='/static/member/js/global.js'></script>
+<link rel="stylesheet" href="/third_party/kindeditor/themes/default/default.css" />
+<script type='text/javascript' src="/third_party/kindeditor/kindeditor-min.js"></script>
+<script type='text/javascript' src="/third_party/kindeditor/lang/zh_CN.js"></script>
+<script type='text/javascript' src="/third_party/kindeditor/plugins/code/prettify.js"></script>
+<script type='text/javascript' src="/static/member/js/shop.js"></script>
+<script>
+
+var base_url  = '<?=$base_url?>';
+var Users_ID = '<?=$_SESSION['Users_ID']?>';
+
+KindEditor.ready(function(K) {
+    
+	editor = K.editor({
+        uploadJson : '/member/upload_json.php?TableField=app_wedding',
+        fileManagerJson : '/member/file_manager_json.php',
+        showRemote : true,
+        allowFileManager : true,
+    });
+
+
+	K('#ImgUpload_1').click(function(){	
+	
+        editor.loadPlugin('image', function(){
+            editor.plugin.imageDialog({
+                imageUrl : K('#ImgPath_1').val(),
+                clickFn : function(url, title, width, height, border, align){
+                    K('#ImgPath_1').val(url);
+                    K('#ImgDetail_1').html('<img src="'+url+'" />');
+                    editor.hideDialog();
+                }
+            });
+        });
+	
+    });
+	
+	K('#ImgUpload_2').click(function(){	
+	
+        editor.loadPlugin('image', function(){
+            editor.plugin.imageDialog({
+                imageUrl : K('#ImgPath_2').val(),
+                clickFn : function(url, title, width, height, border, align){
+                    K('#ImgPath_2').val(url);
+                    K('#ImgDetail_2').html('<img src="'+url+'" />');
+                    editor.hideDialog();
+                }
+            });
+        });
+	
+    });
+	
+	K('#ImgUpload_3').click(function(){	
+	
+        editor.loadPlugin('image', function(){
+            editor.plugin.imageDialog({
+                imageUrl : K('#ImgPath_3').val(),
+                clickFn : function(url, title, width, height, border, align){
+                    K('#ImgPath_3').val(url);
+                    K('#ImgDetail_3').html('<img src="'+url+'" />');
+                    editor.hideDialog();
+                }
+            });
+        });
+	
+    });
+	
+	K('#ImgUpload_4').click(function(){	
+	
+        editor.loadPlugin('image', function(){
+            editor.plugin.imageDialog({
+                imageUrl : K('#ImgPath_4').val(),
+                clickFn : function(url, title, width, height, border, align){
+                    K('#ImgPath_4').val(url);
+                    K('#ImgDetail_4').html('<img src="'+url+'" />');
+                    editor.hideDialog();
+                }
+            });
+        });
+	
+    });
+
+
+  
+})
+
+
+</script>
+</head>
+
+<body>
+<!--[if lte IE 9]><script type='text/javascript' src='/static/js/plugin/jquery/jquery.watermark-1.3.js'></script>
+<![endif]-->
+<style type="text/css">
+body, html{background:url(/static/member/images/main/main-bg.jpg) left top fixed no-repeat;}
+</style>
+<div id="iframe_page">
+  <div class="iframe_content">
+    <link href='/static/member/css/user.css' rel='stylesheet' type='text/css' />
+    <script type='text/javascript' src='/static/member/js/user.js'></script>
+    <div class="r_nav">
+     <ul>
+       
+        <li class=""> <a href="distributes.php">分销账号管理</a> </li>
+        <li class=""><a href="distribute_record.php">分销记录</a></li>
+        <li class=""><a href="withdraw_record.php">提现记录</a></li>   
+        <li class="cur"><a href="distribute_title.php">爵位设置</a></li>
+        <li class=""><a href="channel_config.php">渠道设置</a></li>
+        <li class=""><a href="withdraw_method.php">提现方法管理</a></li>
+      </ul>
+    </div>
+    <link href='/static/js/plugin/operamasks/operamasks-ui.css' rel='stylesheet' type='text/css' />
+    <script type='text/javascript' src='/static/js/plugin/operamasks/operamasks-ui.min.js'></script> 
+    <script language="javascript">
+	$(document).ready(function(){
+		//	global_obj.config_form_init();
+		shop_obj.dis_title_init();
+	});
+    </script>
+    <div class="r_con_config r_con_wrap">
+ 
+	 <h1><strong>爵位设置</strong></h1>
+	 <span style="color:red;">(满足团队销售额或团队人数条件之一便可晋级,最多可设四个级别,想设置几个级别，便可填写几条)</span>
+  
+   <div id="distribute_title" class="r_con_config r_con_wrap">
+    <form id="level_form" method="post" action="distribute_title.php">
+		   <?php if($exist): ?>
+                 <input type="hidden" name="operation" value="set" />
+		   <?php else: ?>
+           		 <input type="hidden" name="operation" value="add" />
+		   <?php endif;?>
+	   <table class="level_table" id="dis_pro_title_table" border="0" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <td width="10%">序号</td>
+                    <td width="15%">称号名称</td>
+                    <td width="10%">晋级所需团队销售额<span style="color:red;">(仅可输入数字)</span></td>
+                    <td width="10%">晋级所需团队人数<span style="color:red;">(仅可输入数字)</span></td>
+                    <td width="5%">奖励额度<span style="color:red;">(%,占佣金的百分比)</span></td>
+                    <td width="10%">等级图标</td>
+                   
+                </tr>
+            </thead>
+            <tbody>
+			
+	
+			<?php for($i=1;$i<=4;$i++){ ?>
+			
+				<tr  fieldtype="text">
+                    <td><?=$i?></td>
+                    <td>
+                        <input class="form_input" value="<?=$dis_title_level[$i]['Name']?>" name="Dis_Pro_Title[Name][]" 
+						<?php if($i == 1):?>
+						notnull
+						<?php endif;?>
+
+						type="text">
+                    </td>
+                    <td>
+                        <input class="form_input title_val" value="<?=$dis_title_level[$i]['Saleroom']?>"  name="Dis_Pro_Title[Saleroom][]"  <?php if($i == 1):?>
+						notnull
+						<?php endif;?> type="text">
+                    </td>
+                    <td>
+                    	 <input class="form_input Group_Num" value="<?=!empty($dis_title_level[$i]['Group_Num'])?$dis_title_level[$i]['Group_Num']:''?>"  name="Dis_Pro_Title[Group_Num][]"
+						
+						 <?php if($i == 1):?>
+						notnull
+						<?php endif;?>
+						
+						 type="text">
+                    </td>
+                    <td>
+                        <input class="form_input" value="<?=$dis_title_level[$i]['Bonus']?>" name="Dis_Pro_Title[Bonus][]" 
+ <?php if($i == 1):?>
+						notnull
+						<?php endif;?>						type="text">
+                    </td>
+                 <td> 
+                      <label>
+                  <input type="button" id="ImgUpload_<?=$i?>" value="选择图片" style="width:80px;" />
+                </label>
+					<span class="pic" id="ImgDetail_<?=$i?>">	
+						<?php if(!empty($dis_title_level[$i]['ImgPath'])):?>
+							<img src="<?=$dis_title_level[$i]['ImgPath']?>" />
+						<?php endif;?>
+					</span>
+					
+                <input type="hidden" id="ImgPath_<?=$i?>" name="Dis_Pro_Title[ImgPath][]" value="<?=$dis_title_level[$i]['ImgPath']?>" />
+                    </td>
+                  
+				</tr>
+	
+			<?php } ?>
+      	
+            </tbody>
+        </table>
+        <div class="blank20"></div>
+        <div class="submit">
+            <input name="submit_button" value="提交保存" type="submit">
+			<input name="reset_button"  value="清除内容" id="clear_form" type="button">
+ 	   </div>
+        <input name="action" value="distribute_title" type="hidden">
+    </form>
+  </div>
+             
+    </div>
+  </div>
+</div>
+</body>
+</html>

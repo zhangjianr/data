@@ -1,0 +1,20 @@
+@media all and (min-width:360px){
+	#shop_skin_index .banner{height:158px;}
+	#shop_skin_index .a0{height:101px;}
+	#shop_skin_index .box li{height:90px;}
+}
+@media all and (min-width:480px){
+	#shop_skin_index .banner{height:210px;}
+	#shop_skin_index .a0{height:135px;}
+	#shop_skin_index .box li{height:120px;}
+}
+@media all and (min-width:560px){
+	#shop_skin_index .banner{height:245px;}
+	#shop_skin_index .a0{height:158px;}
+	#shop_skin_index .box li{height:140px;}
+}
+@media all and (min-width:640px){
+	#shop_skin_index .banner{height:280px;}
+	#shop_skin_index .a0{height:180px;}
+	#shop_skin_index .box li{height:160px;}
+}

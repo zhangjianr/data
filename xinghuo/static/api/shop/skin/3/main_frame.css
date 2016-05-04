@@ -1,0 +1,6 @@
+#main_frame{position:relative;}
+#main_frame #left_menu{top:50px; float:left; width:85px; position:absolute; overflow-x:hidden; overflow-y:scroll; -webkit-overflow-scrolling:touch; height:200px; background:url(../images/xbg.png) left repeat-y;}
+#main_frame #left_menu li{padding:15px 0 15px 10px;	background:url(../images/linehen.png) no-repeat left bottom;}
+#main_frame #left_menu li a{color:#666; text-decoration:none; display:block;}
+#main_frame #left_menu .blank25{height:38px;}
+#main_frame #page_right_contents{position:absolute; left:85px; width:235px; top:50px; overflow-x:hidden; overflow-y:scroll; -webkit-overflow-scrolling:touch;}

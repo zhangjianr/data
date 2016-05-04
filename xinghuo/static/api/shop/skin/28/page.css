@@ -1,0 +1,44 @@
+body{background:#f3f3f3; font-family:"宋体"}
+#shop_skin_index{width:100%; overflow:hidden; margin:0 auto;}
+#shop_skin_index .img img{width:100%; height:100%;}
+#shop_skin_index .shop_skin_index_list{overflow:hidden; position:relative; z-index:1;}
+#shop_skin_index .banner{width:100%; height:131px; line-height:160px;}
+#shop_skin_index .banner *{width:100%; height:100%; overflow:hidden;}
+
+.index_cate{width:100%; margin-top:8px; background:#FFF; padding-top:3px;}
+.index_cate ul li{width:25%; float:left;}
+.index_cate ul li a{display:block; width:60px; height:60px; margin:0px auto; overflow:hidden}
+.index_cate ul li a img{width:100%; height:100%; border-radius:50%; background:#e5e5e5}
+.index_cate ul li p{margin:0px auto; padding:5px 0px 0px; height:30px; width:90%; font-size:14px;}
+
+.index_products .items{width:100%; background:#FFF; margin:10px 0; padding:10px;box-sizing:border-box;}
+.index_products .items .products_info{width:100%; margin:0px auto;position:relative;}
+.index_products .items .products_info img{display:block; width:100%;}
+.index_products .items .products_info h3 {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	line-height: 35px;
+	height: 35px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	background: rgba(0, 0, 0, 0.6);
+	margin: 0px;
+	color: #fff;
+	padding: 0 10px;
+	box-sizing: border-box;
+	white-space:nowrap;
+}
+.index_products .items .products_info h3 p{
+	margin:0px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.flex{
+    display:-webkit-box;
+    display:box;
+}
+.flex_1{
+    -webkit-box-flex:1.0;
+    box-flex:1.0;
+}

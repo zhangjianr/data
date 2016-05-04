@@ -1,0 +1,23 @@
+#shop_skin_index{width:100%; overflow:hidden; margin:0 auto;}
+#shop_skin_index .index_header{height:44px; overflow:hidden; background:url(h_bg.jpg); background-size:100%; border-bottom:1px solid #910100;}
+#shop_skin_index .index_header .logo{float:left; width:100px; height:44px; overflow:hidden; padding-right:10px;}
+#shop_skin_index .index_header .logo div{width:100px; height:44px; text-align:center; display:table-cell; vertical-align:middle; font-size:0px;}
+#shop_skin_index .index_header .logo div a{*height:100%; *writing-mode:tb-rl;}
+#shop_skin_index .index_header .logo img{height:auto;}
+#shop_skin_index .index_header .search{height:30px; border-radius:5px; border:1px solid #fff; overflow:hidden; position:relative; background:#fff; margin:6px;}
+#shop_skin_index .index_header .search .input{width:100%; height:18px; line-height:18px; padding:0 48px 0 8px;box-sizing:border-box; -moz-box-sizing:border-box;-webkit-box-sizing:border-box; margin:6px 0; border:none;}
+#shop_skin_index .index_header .search .submit{width:40px; height:30px; overflow:hidden; position:absolute; top:0px; right:0px; background:url(search_btn.jpg) center center no-repeat #e7e7e7; background-size:16px 16px; cursor:pointer;  border-top-right-radius:5px;  border-bottom-right-radius:5px;}
+#shop_skin_index .img img{width:100%; height:100%;}
+#shop_skin_index .shop_skin_index_list{overflow:hidden; position:relative; z-index:1;}
+#shop_skin_index .banner{width:100%; height:160px; line-height:160px;}
+#shop_skin_index .banner *{width:100%; height:100%; overflow:hidden;}
+
+#index-h{height:65px; background:#f4f4f4; clear:both; border:1px solid #ccc; box-shadow:3px 3px 3px #d7d7d7; border-radius:5px; width:96%; margin:0 auto; margin-top:5px;}
+#index-h div{float:left; height:100%; width:33%; text-align:center;box-sizing:border-box; -moz-box-sizing:border-box;-webkit-box-sizing:border-box; }
+#index-h div.c{border-left:1px solid #ddd; width:34%;}
+#index-h div.d{border-left:1px solid #ddd;}
+#index-h div img{margin-top:7px;}
+#index-h div a{text-decoration:none; color:#777;}
+
+#index_prolist{margin:5px auto;}
+#index_prolist h1{height:28px; width:50%; line-height:28px; font-size:16px; color:#666; font-weight:bold; background:#e5e5e5; border-radius:5px; text-align:center; margin:0 auto; margin-bottom:8px;}

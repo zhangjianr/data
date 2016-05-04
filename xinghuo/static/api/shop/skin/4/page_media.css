@@ -1,0 +1,32 @@
+@media all and (min-width:360px){
+	#shop_skin_index .banner{height:180px;}
+	#shop_skin_index .list{height:135px;}
+}
+@media all and (min-width:400px){
+	#shop_skin_index .banner{height:200px;}
+	#shop_skin_index .list{height:150px;}
+}
+@media all and (min-width:440px){
+	#shop_skin_index .banner{height:220px;}
+	#shop_skin_index .list{height:165px;}
+}
+@media all and (min-width:480px){
+	#shop_skin_index .banner{height:240px;}
+	#shop_skin_index .list{height:180px;}
+}
+@media all and (min-width:520px){
+	#shop_skin_index .banner{height:260px;}
+	#shop_skin_index .list{height:195px;}
+}
+@media all and (min-width:560px){
+	#shop_skin_index .banner{height:280px;}
+	#shop_skin_index .list{height:210px;}
+}
+@media all and (min-width:600px){
+	#shop_skin_index .banner{height:300px;}
+	#shop_skin_index .list{height:225px;}
+}
+@media all and (min-width:640px){
+	#shop_skin_index .banner{height:320px;}
+	#shop_skin_index .list{height:240px;}
+}

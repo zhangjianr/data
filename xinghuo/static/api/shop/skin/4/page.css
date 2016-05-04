@@ -1,0 +1,8 @@
+#shop_skin_index{width:100%; overflow:hidden; margin:0 auto;}
+#shop_skin_index .img img{width:100%; height:100%;}
+#shop_skin_index .shop_skin_index_list{overflow:hidden; position:relative; z-index:1;}
+#shop_skin_index .banner{width:100%; height:160px; line-height:160px;}
+#shop_skin_index .banner *{width:100%; height:100%; overflow:hidden;}
+#shop_skin_index .list{width:100%; height:120px; overflow:hidden; padding:1px; box-sizing:border-box;}
+#shop_skin_index .list .img{width:100%; height:100%; margin:0 auto;}
+#shop_skin_index .list .img img{width:100%; height:100%;}

@@ -1,0 +1,49 @@
+#shop_skin_index{width:100%; overflow:hidden; margin:0 auto; background:#eaeaea;}
+#shop_skin_index .img img{width:100%; height:100%;}
+#shop_skin_index .shop_skin_index_list{overflow:hidden; position:relative; z-index:1;}
+#shop_skin_index .banner{height:160px;}
+#shop_skin_index .banner *{width:100%; height:100%;}
+
+#shop_skin_index .header{ width:100%; padding:8px; box-sizing:border-box; overflow:hidden;}
+#shop_skin_index .header .logo{float:left; width:150px; height:40px; overflow:hidden;}
+#shop_skin_index .header .login{display:inline-block; float:right; height:40px; overflow:hidden; line-height:40px; background:url(member.jpg) left center no-repeat; background-size:14px 14px; padding-left:18px;}
+#shop_skin_index .header .login a{font-size:15px; color:#5d0909; text-decoration:none;}
+#shop_skin_index .header .search{height:26px; border-radius:5px; border:1px solid #d2d2d2; margin-top:3px; overflow:hidden; background:#ffffff; position:relative;}
+#shop_skin_index .header .search .input{width:100%; height:18px; line-height:18px; padding:0 48px 0 8px; box-sizing:border-box; margin:4px 0; border:none;}
+#shop_skin_index .header .search .submit{width:40px; height:26px; overflow:hidden; position:absolute; top:0px; right:0px; background:url(search_btn.jpg) center center no-repeat #e7e7e7; background-size:16px 16px; cursor:pointer;  border-top-right-radius:5px;  border-bottom-right-radius:5px;}
+
+#shop_skin_index .menu{padding:8px; overflow:hidden;}
+#shop_skin_index .menu .nav li{width:25%; height:76px; background:#f9fafc; border-left:1px solid #eaeaea; float:left; box-sizing:border-box; overflow:hidden;}
+#shop_skin_index .menu .nav li a{display:block; height:60px; padding:8px 0; text-decoration:none;}
+#shop_skin_index .menu .nav li .name{height:20px; line-height:20px; text-align:center;}
+#shop_skin_index .menu .nav li .img{height:40px;}
+#shop_skin_index .menu .nav li:nth-child(1){border:none;}
+#shop_skin_index .menu .nav li:nth-child(1) .img{background:url(category.jpg) center center no-repeat; background-size:22px 22px}
+#shop_skin_index .menu .nav li:nth-child(2) .img{background:url(shipping.jpg) center center no-repeat; background-size:32px 25px}
+#shop_skin_index .menu .nav li:nth-child(3) .img{background:url(tuan.jpg) center center no-repeat; background-size:25px 23px;}
+#shop_skin_index .menu .nav li:nth-child(4) .img{background:url(basket.jpg) center center no-repeat; background-size:28px 24px;}
+#shop_skin_index .menu .ad li{width:33.33%; height:80px; float:left; overflow:hidden;}
+#shop_skin_index .menu .ad li *{height:100%;}
+#shop_skin_index .menu .ad li>div img{width:100%; height:100%;}
+#shop_skin_index .menu .ad li:nth-child(1){padding-right:1px; box-sizing:border-box;}
+#shop_skin_index .menu .ad li:nth-child(2){padding:0 1px; box-sizing:border-box;}
+#shop_skin_index .menu .ad li:nth-child(3){padding-left:1px; box-sizing:border-box;}
+
+#shop_skin_index .line{width:100%; height:12px; overflow:hidden; background:url(line_bg.jpg) repeat-x; clear:both; font-size:0px; line-height:0px;}
+#shop_skin_index .box{padding:8px; overflow:hidden;}
+#shop_skin_index .box .ad{width:66.666%; height:200px; overflow:hidden; float:left;}
+#shop_skin_index .box .ad_r{ width:33.333%; height:200px; float:left; padding-left:4px; box-sizing:border-box; overflow:hidden;}
+#shop_skin_index .box .box_0{height:98px; overflow:hidden; margin-top:8px;}
+#shop_skin_index .box .box_1{height:98px; overflow:hidden; background:#FFF;  border:1px solid #dddddd; margin-top:8px;}
+#shop_skin_index .box .box_1 .item{border-left:1px solid #ddd; box-sizing:border-box;}
+#shop_skin_index .box .box_1 .first{border:none;}
+#shop_skin_index .box .item{width:33.333%; height:98px; float:left; overflow:hidden; background:#FFF;}
+#shop_skin_index .box .item a{display:block; width:100%; height:100%; overflow:hidden; text-decoration:none;}
+#shop_skin_index .box .item .img{height:78px; margin:0 10px; box-sizing:border-box; overflow:hidden; text-align:center;}
+#shop_skin_index .box .item .img img{width:auto; height:auto; max-width:100%; max-height:100%;}
+#shop_skin_index .box .item .name{height:20px; line-height:20px; overflow:hidden; text-align:center; font-size:12px;}
+#shop_skin_index .box .ad_r .item{width:100%; margin-bottom:4px;}
+#shop_skin_index .box .box_0 .item{width:33.333%;}
+#shop_skin_index .box .box_0 .item:nth-child(1){border-right:2px solid #eaeaea; box-sizing:border-box;}
+#shop_skin_index .box .box_0 .item:nth-child(2){border-left:2px solid #eaeaea; box-sizing:border-box;}
+#shop_skin_index .box .box_0 .item:nth-child(3){border-left:4px solid #eaeaea; box-sizing:border-box;}
